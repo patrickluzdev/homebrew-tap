@@ -5,21 +5,21 @@
 class Esquadro < Formula
   desc "Generate Go projects from a model, with blueprints"
   homepage "https://patrickluzdev.github.io/esquadro/"
-  version "0.13.0"
+  version "0.14.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.13.0/esquadro_0.13.0_darwin_amd64.tar.gz"
-      sha256 "dd4a74606eba5885d9286c20af79812fe1bfffcbc0df9dac9c7d107c4af0512f"
+      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.14.0/esquadro_0.14.0_darwin_amd64.tar.gz"
+      sha256 "e961a2a27caeb15ca5fa93960412973aab10ece8f5e94f1a1ef69743fdf1f813"
 
       define_method(:install) do
         bin.install "esquadro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.13.0/esquadro_0.13.0_darwin_arm64.tar.gz"
-      sha256 "257da66863eb8f85a4a053ee6d5233889510834165afb3af7d40d2aa07082c9d"
+      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.14.0/esquadro_0.14.0_darwin_arm64.tar.gz"
+      sha256 "2edf9b54be63f9593fbecef574708ec5c01dfe719ebdbaf5ad054715b7f67fbf"
 
       define_method(:install) do
         bin.install "esquadro"
@@ -29,15 +29,15 @@ class Esquadro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.13.0/esquadro_0.13.0_linux_amd64.tar.gz"
-      sha256 "a057db4abefb5be197f5a369190f8da40bab6ebffb12e09df130af991831a123"
+      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.14.0/esquadro_0.14.0_linux_amd64.tar.gz"
+      sha256 "1aff6ef82f836d6558c4af91b81d224c17fb6ce4367a2175621cd1ce9b5f7a0a"
       define_method(:install) do
         bin.install "esquadro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.13.0/esquadro_0.13.0_linux_arm64.tar.gz"
-      sha256 "00e8b3e6fa3db048a1064fae8620834fdc40dd80bc090d54153167073c1fe3af"
+      url "https://github.com/patrickluzdev/esquadro/releases/download/v0.14.0/esquadro_0.14.0_linux_arm64.tar.gz"
+      sha256 "79c91875eaca645bd689ea4ec400036c2d1cd0e940fc050a79589ee3958cc788"
       define_method(:install) do
         bin.install "esquadro"
       end
